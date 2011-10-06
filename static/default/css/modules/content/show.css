@@ -16,20 +16,68 @@
     z-index: 1000;
 }
 
+.picture-item.right a{
+    position: absolute;
+    bottom:282px;
+    right:10px;
+    width:70px;
+    height:35px;
+    background: url(/static/img/arrow-right.png) center center no-repeat;
+    z-index: 1000;
+}
+.picture-item.left a{
+    position: absolute;
+    bottom:282px;
+    left:10px;
+    width:70px;
+    height:35px;
+    background: url(/static/img/arrow-left.png) center center no-repeat;
+    z-index: 1000;
+}
+
+.picture-item.tags{
+    position: absolute;
+    left: 10px;
+    top:0px;
+    font-size:12px;
+    width:770px;
+    overflow: hidden;
+    height: 20px;
+    z-index: 1000;
+}
+
+.tag-item{
+    float: left;
+    line-height: 14px;
+    padding:5px;
+}
+
+.tag-item a{
+    
+}
+
 .picture-item.poo a{
     position: absolute;
-    bottom:0px;
-    left:10px;
+    bottom:-10px;
+    left:160px;
     width:70px;
     height:60px;
     background: url(/static/img/poo.png) center center no-repeat;
     z-index: 1000;
 }
-
+.picture-item.random a{
+    position: absolute;
+    bottom:-10px;
+    left:330px;
+    width:120px;
+    height:60px;
+    background: url(/static/img/random.png) center center no-repeat;
+    z-index: 1000;
+}
 .picture-item.heart a{
     position: absolute;
-    bottom:0px;
-    right:13px;
+    bottom:-10px;
+    right:163px;
     width:70px;
     height:60px;
     background: url(/static/img/heart.png) center center no-repeat;
@@ -38,14 +86,14 @@
 
 .picture-item.id{
     position: absolute;
-    left: 10px;
+    right: 0px;
     font-size:18px;
     z-index: 1000;
 }
 
 .picture-item.title{
     position: absolute;
-    right: 10px;
+    right: 40px;
     font-size:18px;
     z-index: 1000;
 }

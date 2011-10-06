@@ -19,17 +19,39 @@
             <div class="picture-item title" >
                 <xsl:value-of select="@title" />
             </div>
-            
+            <div class="picture-item tags">
+                <xsl:if test="tags/item">
+                    <div class="tag-item">
+                        <xsl:text>теги: </xsl:text>
+                    </div>
+                </xsl:if>
+                <xsl:for-each select="tags/item">
+                    <div class="tag-item">
+                        <a href="#">
+                            <xsl:value-of select="@title" />
+                        </a>
+                    </div>
+                </xsl:for-each>
+            </div>
+        </div>
+        <div class="picture-item left">
+            <a href="#"></a>
+        </div>
+        <div class="picture-item right">
+            <a href="#"></a>
+        </div>
+        <div class="picture-item poo">
+            <a href="#"></a>
+        </div>
+        <div class="picture-item random">
+            <a href="#"></a>
+        </div>
+        <div class="picture-item heart">
+            <a href="#"></a>
         </div>
         <div class="picture-item item">
-            <div class="picture-item image">            
+            <div class="picture-item image">
                 <div class="picture-item imagepre">
-                    <div class="picture-item poo">
-                        <a href="#"></a>
-                    </div>
-                    <div class="picture-item heart">
-                        <a href="#"></a>
-                    </div>
                     <img src="{@source}" />
                 </div>
             </div>
