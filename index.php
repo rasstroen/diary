@@ -46,6 +46,7 @@ try {
     if ($dev_mode) {
         $errorString = "<h3>" . $e->getMessage() . '</h3><br/>[' . $e->getFile() . ':' . $e->getLine() . '][' . $e->getCode() . ']';
         $errorString .= '<br/><pre>' . $e->getTraceAsString() . '</pre>';
+	die($errorString);
     } else {
         $errorString = $e->getMessage();
     }

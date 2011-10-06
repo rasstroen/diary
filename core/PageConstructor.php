@@ -114,6 +114,7 @@ class PageConstructor {
 		XMLClass::$pageNode = XMLClass::createNodeFromObject($this->pageSettings, false, 'page', false);
 		XMLClass::appendNode(XMLClass::$pageNode, $this->pageName);
 		XMLClass::$pageNode->setAttribute('current_url', Request::$url);
+                XMLClass::$pageNode->setAttribute('url', Request::$urlfirst);
 		XMLClass::$pageNode->setAttribute('page_url', Config::need('www_path') . '/' . Request::$pageName . '/');
 		XMLClass::$pageNode->setAttribute('prefix', Config::need('www_path') . '/');
 		if ($current_user->authorized)

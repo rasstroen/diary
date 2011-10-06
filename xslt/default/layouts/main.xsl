@@ -5,5 +5,8 @@
 	<xsl:output omit-xml-declaration="yes"/>
 	<xsl:output indent="yes"/>
 	<xsl:include href="layout.xsl" />
-</xsl:stylesheet>
+	<xsl:template match="&root;" mode="l-content">
 
+	<xsl:apply-templates select="content_module[@action ='show' and @mode='random']" />
+</xsl:template>
+</xsl:stylesheet>

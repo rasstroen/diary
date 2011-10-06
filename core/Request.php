@@ -17,6 +17,7 @@ class Request {
 	public static $post = array();
 	public static $pageName = 'p404';
 	public static $url = '';
+        public static $urlfirst = '';
 	public static $responseType = 'html';
 
 	/** обрабатываем входные параметры скрипта, определяем запрашиваемую страницу
@@ -261,6 +262,8 @@ class Request {
 		foreach ($path as $path_part) {
 			$part = '';
 			if ($path_part && self::specialParameters($path_part)) {
+                            if(!self::$urlfirst && $path_part)
+                                self::$urlfirst = $path_part;
 				if (is_numeric($path_part)) {
 					$part = '%d';
 				} else {

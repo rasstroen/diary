@@ -3,12 +3,12 @@
 class Config {
 
     private static $config = array(
-        'base_path' => '/home/diary/', // в какой директории на сервере лежит index.php
+        'base_path' => '/home/jma/', // в какой директории на сервере лежит index.php
         'www_absolute_path' => '', // например для http://localhost/hello/ это будет /hello
-        'www_path' => 'http://дняфка.рф',
-        'www_domain' => 'дняфка.рф',
+        'www_path' => 'http://xn--e1abse3c6b.xn--p1ai',
+        'www_domain' => 'xn--e1abse3c6b.xn--p1ai',
         'default_page_name' => 'main', // синоним для корня сайта
-        'static_path' => './static', //
+        'static_path' => '/home/jma/static', //
         //USERS
         'default_language' => 'ru',
         //Register
@@ -18,7 +18,7 @@ class Config {
         'auth_cookie_hash_name' => 'dhash_',
         'auth_cookie_id_name' => 'did_',
         // Avatars
-        'avatar_upload_path' => './static/upload/avatars',
+        'avatar_upload_path' => '/home/jma/static/upload/avatars',
         // Mongo
         'mongohost' => '127.0.0.1',
         // MySQL

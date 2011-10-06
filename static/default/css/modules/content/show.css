@@ -1,0 +1,68 @@
+.picture-item.item{
+    display: table;
+    position: relative;
+    overflow: hidden;
+    color: red;
+    height:600px;
+    width:780px;
+    text-align:center
+}
+.picture-item.container{
+    position: relative;
+
+}
+.picture-item.header{
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.picture-item.poo a{
+    position: absolute;
+    bottom:0px;
+    left:10px;
+    width:70px;
+    height:60px;
+    background: url(/static/img/poo.png) center center no-repeat;
+    z-index: 1000;
+}
+
+.picture-item.heart a{
+    position: absolute;
+    bottom:0px;
+    right:13px;
+    width:70px;
+    height:60px;
+    background: url(/static/img/heart.png) center center no-repeat;
+    z-index: 1000;
+}
+
+.picture-item.id{
+    position: absolute;
+    left: 10px;
+    font-size:18px;
+    z-index: 1000;
+}
+
+.picture-item.title{
+    position: absolute;
+    right: 10px;
+    font-size:18px;
+    z-index: 1000;
+}
+
+.picture-item.image{
+    #position: absolute;
+    #top: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.picture-item.imagepre{
+    position: relative;
+    #top: -50%;
+    #left: -50%
+}
+
+.picture-item.image div img{
+    border:5px solid #9fcadf;
+}

@@ -243,6 +243,7 @@ class backend_module extends BaseModule {
 
 		// URI PATHS
 		$Map = array();
+		$Map['sinonim'] = array();
 		foreach ($pages as $page) {
 			if ($page['uri_redirect']) {
 				$Map['sinonim'][$page['uri_path']] = $page['uri_redirect'];
